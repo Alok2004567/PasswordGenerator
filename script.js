@@ -46,7 +46,6 @@ generate.addEventListener("click", () => {
         hasSymbol,
         length
     );
-    // console.log(hasLower, hasUpper, hasNumber, hasSymbol);
 });
 
 // function for generating random password
@@ -57,7 +56,6 @@ function generatePassword(lower, upper, number, symbol, length) {
     const typesArr = [{ lower }, { upper }, { number }, { symbol }].filter(
         (item) => Object.values(item)[0]
     );
-    // console.log(typesArr);
 
     // creating a loop for calling generator function for each type
     for (let i = 0; i < length; i += typesCount) {
